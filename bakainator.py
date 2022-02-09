@@ -9,3 +9,4 @@ if str(b) =="D" :
         print("Bakaaaaaa " * int(a))
 else:
     print("a to nie ac pac :> u re greatest!!!!")
+#test
