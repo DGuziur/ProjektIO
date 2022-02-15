@@ -31,5 +31,19 @@ renderProducts();
 let cart = []
 
 function addToCart(id){
-    console.log(id)
+   if (cart.some((item) => item.id === id)) {
+       alert("Already in cart");
+   }else {
+       const item = products.find((product) => product.id === id);
+
+       cart.push({
+           ...item,
+           numberOfUnits: 1,
+       });
+   }
+   updateCart();
+}
+function updateCart(){
+    
+
 }
