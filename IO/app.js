@@ -26,5 +26,10 @@ function renderProducts(){
         `
     })
 }
-
 renderProducts();
+
+let cart = []
+
+function addToCart(id){
+    console.log(id)
+}
