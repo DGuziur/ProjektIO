@@ -44,6 +44,28 @@ function addToCart(id){
    updateCart();
 }
 function updateCart(){
-    
+    rendercartItems();
+}
 
+const cartItemsEl = document.querySelector(".cart-items");
+
+function rendercartItems(){
+    cartItemsEl.innerHTML = "";
+    cart.forEach((item) => {
+        cartItemsEl.innerHTML += `
+                <div class="cart-item">
+                    <div class="item-info">
+                        <img src="${item.imgSrc}" alt="${item.name}">
+                        <h4>${item.name}</h4>
+                    </div>
+                    <div class="unit-price">
+                        <small>$</small>${item.price}
+                    </div>
+                    <div class="units">
+                        <div class="btn minus">-</div>
+                        <div class="number">${item.numberOfUnits}</div>
+                        <div class="btn plus">+</div>
+                    </div>
+                </div> `
+    })
 }
