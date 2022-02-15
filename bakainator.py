@@ -23,10 +23,11 @@ def test_is_baka():
     result = is_baka(en)
     #then
     assert result
-    assert is_baka(0)
-
+    assert is_baka(6)
+    assert is_baka(10)
 #sprawdzam, czy nie baka
 
 def test_is_not_baka():
     assert not is_baka(1)
     assert not is_baka(2)
+    assert not is_baka(0)
