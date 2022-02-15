@@ -1,5 +1,6 @@
 const productsEl = document.querySelector(".products");
 const subtotalEl = document.querySelector(".subtotal");
+const totalItemsInCartEl = document.querySelector(".total-items-in-cart");
 
 
 function renderProducts(){
